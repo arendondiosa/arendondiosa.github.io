@@ -1,0 +1,7 @@
+[project]
+name = rendon.co
+
+[alternatives.es]
+name = Español
+primary = yes
+locale = es
