@@ -5,3 +5,13 @@ name = rendon.co
 name = Español
 primary = yes
 locale = es
+
+[alternatives.en]
+name = English
+url_prefix = /en/
+locale = en
+
+[servers.production]
+name = Production
+enabled = yes
+target = ghpages+https://arendondiosa/arendondiosa.github.io?cname=rendon.co
