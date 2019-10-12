@@ -1,4 +1,17 @@
 {%- set base_url = '/'|url(alt='es') -%}
+{%- from "macros/translation.html" import transbag -%}
+
+{%- macro menu_item(identifier, icon) -%}
+    {% set identifier_url = '/' + identifier %}
+    {% set trans_url = identifier_url|url(alt=this.alt) %}
+    {% set this_is_child = this.is_child_of(identifier_url) %}
+
+    <li class="nav-item {% if this_is_child %}active{% endif %}">
+        <a class="nav-link" href="{{ trans_url }}"><i class="fas fa-{{icon}} fa-fw mr-2">
+            </i>{{ transbag('menu', this.alt, identifier) }} <span class="sr-only">(current)</span>
+        </a>
+    </li>
+{%- endmacro -%}
 
 <!DOCTYPE html>
 <html lang="es"> 
@@ -9,8 +22,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Template">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <!-- <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">     -->
     <link rel="shortcut icon" href="{{ base_url }}static/favicon.ico"> 
 	
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
@@ -50,15 +63,10 @@
                 </div><!--//profile-section-->
                 
                 <ul class="navbar-nav flex-column text-left">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item {% if this._path == '/' %}active{% endif %}">
+                        <a class="nav-link" href="{{ '/'|url(alt=this.alt) }}"><i class="fas fa-user fa-fw mr-2"></i>{{ transbag('menu', this.alt, 'about') }}</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Blog Post</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
-                    </li>
+                    {{ menu_item('blog', 'file-alt') }}
                 </ul>
                 
                 <div class="my-2 my-md-3">
