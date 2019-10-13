@@ -15,3 +15,6 @@ locale = en
 name = Production
 enabled = yes
 target = ghpages+https://arendondiosa/arendondiosa.github.io?cname=rendon.co
+
+[packages]
+lektor-disqus-comments = 0.4.1
