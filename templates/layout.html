@@ -13,88 +13,94 @@
     </li>
 {%- endmacro -%}
 
-<!DOCTYPE html>
-<html lang="es"> 
-<head>
-    <title>Alejandro E. Rendon</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="description" content="Blog Template">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">     -->
-    <link rel="shortcut icon" href="{{ base_url }}static/favicon.ico"> 
-	
-    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+<!DOCTYPE HTML>
+<html>
 
-    <!-- FontAwesome JS-->
-    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
-    <!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-	
-	<!-- FontAwesome JS-->
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="{{ base_url }}static/css/theme.css">
-    <link id="theme-style" rel="stylesheet" href="{{ base_url }}static/css/devresume.css">
-    <link id="theme-style" rel="stylesheet" href="{{ base_url }}static/css/main.css">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alejandro E. Rendon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+        <meta name="keywords"
+            content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+        <meta name="author" content="freehtml5.co" />
 
-</head> 
+        <!-- 
+        //////////////////////////////////////////////////////
 
-<body>
-    
-    <header class="header text-center">        
-        <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Alejandro E. Rendon</a></h1>
-        
-        <nav class="navbar navbar-expand-lg navbar-dark" >
-           
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+        FREE HTML5 TEMPLATE 
+        DESIGNED & DEVELOPED by FreeHTML5.co
+            
+        Website:         http://freehtml5.co/
+        Email:             info@freehtml5.co
+        Twitter:         http://twitter.com/fh5co
+        Facebook:         https://www.facebook.com/fh5co
 
-            <div id="navigation" class="collapse navbar-collapse flex-column" >
-                <div class="profile-section pt-3 pt-lg-0">
-                    <img class="profile-image mb-3 rounded-circle mx-auto" src="{{ base_url }}static/images/profile.png" alt="image" >            
-                    <div class="bio mb-3">{{ this.body }}</div>
-                    <ul class="social-list list-inline py-3 mx-auto">
-                        <li class="list-inline-item"><a href="https://twitter.com/arendondiosa" target="blank_"><i class="fab fa-twitter fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="https://linkedin.com/in/arendondiosa" target="blank_"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/arendondiosa" target="blank_"><i class="fab fa-github-alt fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="mailto:alejandro@rendon.co" target="blank_"><i class="fas fa-envelope fa-fw"></i></a></li>
-                    </ul><!--//social-list-->
-                    <hr> 
-                </div><!--//profile-section-->
-                
-                <ul class="navbar-nav flex-column text-left">
-                    <li class="nav-item {% if this._path == '/' %}active{% endif %}">
-                        <a class="nav-link" href="{{ '/'|url(alt=this.alt) }}"><i class="fas fa-user fa-fw mr-2"></i>{{ transbag('menu', this.alt, 'about') }}</a>
-                    </li>
-                    {# {{ menu_item('blog', 'file-alt') }} #}
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="main-wrapper">
+        //////////////////////////////////////////////////////
+        -->
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:description" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="{{ base_url }}static/css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="{{ base_url }}static/css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="{{ base_url }}static/css/bootstrap.css">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="{{ base_url }}static/css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="{{ base_url }}static/js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="{{ base_url }}static/js/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
         {% block body %}{% endblock %}
 
-        <footer class="footer text-center py-2 theme-bg-dark">
-		   
-	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-		   
-	    </footer>
-    
-    </div><!--//main-wrapper-->
-
-    
-       
-    <!-- Javascript -->          
-    <script src="{{ base_url }}static/plugins/jquery-3.3.1.min.js"></script>
-    <script src="{{ base_url }}static/plugins/popper.min.js"></script> 
-    <script src="{{ base_url }}static/plugins/bootstrap/js/bootstrap.min.js"></script> 
-</body>
-</html> 
-
-
+        {% include './partials/footer.html' %}
+        
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+        </div>
+        
+        <!-- jQuery -->
+        <script src="{{ base_url }}static/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="{{ base_url }}static/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="{{ base_url }}static/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="{{ base_url }}static/js/jquery.waypoints.min.js"></script>
+        <!-- Stellar Parallax -->
+        <script src="{{ base_url }}static/js/jquery.stellar.min.js"></script>
+        <!-- Easy PieChart -->
+        <script src="{{ base_url }}static/js/jquery.easypiechart.min.js"></script>
+        <!-- Google Map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+        <script src="{{ base_url }}static/js/google_map.js"></script>
+        
+        <!-- Main -->
+        <script src="{{ base_url }}static/js/main.js"></script>
+        
+    </body>
+        
+</html>
