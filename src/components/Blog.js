@@ -17,7 +17,7 @@ export const Blog = () => {
           <div className="col-md-4">
             <div className="fh5co-blog animate-box">
               <a
-                href="http://rendon.co"
+                href="https://rendon.co"
                 className="blog-bg"
                 style={{
                   backgroundImage: `url("static/images/portfolio-1.jpg")`,
@@ -26,7 +26,7 @@ export const Blog = () => {
               <div className="blog-text">
                 <span className="posted_on">Mar. 15th 2016</span>
                 <h3>
-                  <a href="http://rendon.co">Photoshoot On The Street</a>
+                  <a href="https://rendon.co">Photoshoot On The Street</a>
                 </h3>
                 <p>
                   Far far away, behind the word mountains, far from the
@@ -40,7 +40,7 @@ export const Blog = () => {
                     <i className="icon-eye2"></i>308
                   </li>
                   <li>
-                    <a href="http://rendon.co">
+                    <a href="https://rendon.co">
                       Read More<i className="icon-arrow-right22"></i>
                     </a>
                   </li>
@@ -51,7 +51,7 @@ export const Blog = () => {
           <div className="col-md-4">
             <div className="fh5co-blog animate-box">
               <a
-                href="http://rendon.co"
+                href="https://rendon.co"
                 className="blog-bg"
                 style={{
                   backgroundImage: `url("static/images/portfolio-2.jpg")`,
@@ -60,7 +60,7 @@ export const Blog = () => {
               <div className="blog-text">
                 <span className="posted_on">Mar. 15th 2016</span>
                 <h3>
-                  <a href="http://rendon.co">Surfing at Philippines</a>
+                  <a href="https://rendon.co">Surfing at Philippines</a>
                 </h3>
                 <p>
                   Far far away, behind the word mountains, far from the
@@ -74,7 +74,7 @@ export const Blog = () => {
                     <i className="icon-eye2"></i>308
                   </li>
                   <li>
-                    <a href="http://rendon.co">
+                    <a href="https://rendon.co">
                       Read More<i className="icon-arrow-right22"></i>
                     </a>
                   </li>
@@ -85,7 +85,7 @@ export const Blog = () => {
           <div className="col-md-4">
             <div className="fh5co-blog animate-box">
               <a
-                href="http://rendon.co"
+                href="https://rendon.co"
                 className="blog-bg"
                 style={{
                   backgroundImage: `url("static/images/portfolio-3.jpg")`,
@@ -94,7 +94,7 @@ export const Blog = () => {
               <div className="blog-text">
                 <span className="posted_on">Mar. 15th 2016</span>
                 <h3>
-                  <a href="http://rendon.co">Capture Living On Uderwater</a>
+                  <a href="https://rendon.co">Capture Living On Uderwater</a>
                 </h3>
                 <p>
                   Far far away, behind the word mountains, far from the
@@ -108,7 +108,7 @@ export const Blog = () => {
                     <i className="icon-eye2"></i>308
                   </li>
                   <li>
-                    <a href="http://rendon.co">
+                    <a href="https://rendon.co">
                       Read More<i className="icon-arrow-right22"></i>
                     </a>
                   </li>

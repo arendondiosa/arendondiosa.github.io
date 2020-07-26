@@ -201,7 +201,7 @@ export const Layout = () => {
                   &copy; 2017 Free HTML5 Template. All Rights Reserved. <br />
                   Designed by{" "}
                   <a
-                    href="http://freehtml5.co"
+                    href="https://freehtml5.co"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -209,7 +209,7 @@ export const Layout = () => {
                   </a>{" "}
                   Demo Images:{" "}
                   <a
-                    href="http://unsplash.com"
+                    href="https://unsplash.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
