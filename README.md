@@ -1,138 +1,68 @@
-<div align="center">
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# 👨‍💻 Sitio Web - rendon.co
+## Available Scripts
 
-[![Build Status][build-badge]][build]
-[![MIT License][license-badge]][LICENSE]
-[![Python Status](https://img.shields.io/badge/Python-%33.7-blue.svg?longCache=true&style=flat-square)](https://www.python.org/)
-[![PRs Welcome][prs-badge]][prs] 
-[![GitHub issues](https://img.shields.io/github/issues/arendondiosa/arendondiosa.github.io.svg?style=flat-square)](https://github.com/pythonpereira/sitio-web/issues)
-[![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/arendondiosa)
+In the project directory, you can run:
 
-Este es el repositorio del sitio web _rendon.co_ servido por
-[Github](https://arendondiosa.github.io/), y
-construido utilizando [lektor](https://www.getlektor.com). Se utilizó la plantilla [DevBlog](https://themes.3rdwavemedia.com/bootstrap-templates/personal/devblog-free-bootstrap-4-blog-template-for-developers/) como base.
+### `yarn start`
 
-</div>
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-# 🔀 Flujo de trabajo
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Hay 2 ramas de git, `develop` y `production`.
+### `yarn test`
 
-## ⤴️ Develop
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Es la rama por defecto.
+### `yarn build`
 
-## ⤴️ Production
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Después de que se han ejecutado las pruebas de calidad (QA), los cambios
-realizados en la rama `develop` se unen con la rama `production` y son
-desplegados a través de gh-pages con Lektor a 
-https://arendondiosa.github.io/ (https://rendon.co)
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-# 🛠 Desarrollo local
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## ✅ (Opcional) Entorno Virtual
+### `yarn eject`
 
-### Instalación
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-* Instalar [virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-* ⚠️️ Requiere previa instalación de Python ⚠️
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-### Crear entorno virtual
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-```
-$ virtualenv <nombre_entorno>
-```
+## Learn More
 
-### Activar entorno virtual
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-#### Windows
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```
-$ <nombre_entorno>\Scripts\activate
-```
+### Code Splitting
 
-#### Linux
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-```
-$ source <nombre_entorno>/bin/activate
-```
+### Analyzing the Bundle Size
 
-## ✅ Instala Lektor
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Usando pip:
-```
-$ pip install lektor
-```
+### Making a Progressive Web App
 
-### Usando conda:
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-```
-$ conda install lektor unidecode -c conda-forge
-```
+### Advanced Configuration
 
-## ✅ Instala (reinstala) los `plugins` locales
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-```
-$ lektor plugins reinstall
-```
+### Deployment
 
-## ✅ Corre el servidor local
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-```
-$ lektor server
-```
+### `yarn build` fails to minify
 
-## ⁉️ Problemas comunes
-
-* 🔴 Si en algun momento luego de instalar python3 y crear tu virtualenv. haces `lektor server` y ves este error:
-
-```
-RuntimeError: Click will abort further execution because Python 3 was configured to use ASCIas encoding for the environment.  Consult   https://click.pocoo.org/python3/for mitigation steps.
-```
-Haz esto adentro de tu virtualenv:
-```
-export LC_ALL=en_us.UTF-8
-export LANG=en_us.UTF-8
-```
-
-* 🔴 Si ves `jinja2.exceptions.UndefinedError: 'estimate_reading_time' is undefined` significa que necesitas instalar o reinstalar los `plugins` de lektor. Puedes hacer esto ejecutando
-
-```
-$ lektor plugins reinstall
-```
-
-# 🚀 Despliegue
-
-Gracias a _Lektor Bot_ (Plugin de lektor conectado a Github), podemos desplegar nuestra web estática en diferentes repositorios (en la rama seleccionada en configuración - `gh-pages` en nuestro caso).
-
-La configuración de dichos repositorios se encuentra en `rendon.co.lektorproject`
-
-## ✔️✔️ Producción
-
-```
-$ lektor deploy production
-```
-
-Se desplegará el contenido de la rama `production` en `rendon.co`
-
-___
-<div align="center">
-
-💪 Colaboradores
-
-|[<img src="https://avatars3.githubusercontent.com/u/14989202?s=400&v=4" width="100px;"/><br /><sub><b>Alejandro E. Rendon</b></sub>](https://github.com/arendondiosa)|
-| :---: |
-
-</div>
-
-[build-badge]: https://img.shields.io/travis/arendondiosa/arendondiosa.github.io.svg?style=flat-square
-[build]: https://travis-ci.org/arendondiosa/arendondiosa.github.io
-[license-badge]: https://img.shields.io/npm/l/all-contributors.svg?style=flat-square
-[license]: https://github.com/arendondiosa/arendondiosa.github.io/blob/develop/LICENSE
-[prs-badge]: https://img.shields.io/badge/Issues-welcome-brightgreen.svg?style=flat-square
-[prs]: https://github.com/arendondiosa/arendondiosa.github.io/issues/new
-
-> Estructura basada en [Sitio Web Python Colombia](https://github.com/ColombiaPython/sitio-web)
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
