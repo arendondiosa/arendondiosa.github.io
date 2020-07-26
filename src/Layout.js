@@ -1,4 +1,5 @@
 import React from "react";
+import { Navbar } from "react-bootstrap";
 // import { About } from "./components/About";
 // import { Blog } from "./components/Blog";
 // import { Features } from "./components/Features";
@@ -10,40 +11,47 @@ import React from "react";
 export const Layout = () => {
   return (
     <>
-      {/* <nav
-        className="navbar navbar-inverse navbar-expand-lg sticky-top"
-        role="navigation"
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="#18325a"
+        variant="dark"
+        sticky="top"
       >
-        <a className="navbar-brand" href="#">
-          Flat UI
-        </a>
-        <button
-          type="button"
-          className="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbar-collapse-01"
-        ></button>
-        <div className="collapse navbar-collapse" id="navbar-collapse-01">
-          <ul className="nav navbar-nav mr-auto">
-            <li className="active">
-              <a href="#fakelink">Products</a>
-            </li>
-            <li>
-              <a href="#fakelink">Features</a>
-            </li>
-          </ul>
-          <form className="navbar-form form-inline my-2 my-lg-0" action="#" role="search">
-            <div className="form-group">
-              <div className="input-group">
-                <input className="form-control" id="navbarInput-01" type="search" placeholder="Search">
-                <span className="input-group-btn">
-                  <button type="submit" className="btn"><span className="fui-search"></span></button>
-                </span>
-              </div>
-            </div>
-          </form>
-        </div>
-      </nav> */}
+        <Navbar.Brand href="#home">
+          <img
+            src="/static/images/profile.png"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        {/* <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Nav>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse> */}
+      </Navbar>
       <div className="fh5co-loader"></div>
 
       <div id="page">
@@ -51,7 +59,6 @@ export const Layout = () => {
           id="fh5co-header"
           className="fh5co-cover js-fullheight"
           role="banner"
-          style={{ backgroundImage: `url("static/images/cover_bg_3.jpg")` }}
           data-stellar-background-ratio="0.5"
         >
           <div className="overlay"></div>
@@ -118,7 +125,7 @@ export const Layout = () => {
         <Blog />
         <Started />
 
-        <div id="fh5co-consult">
+        <div id="fh5co-consult" className="fh5co-bg-dark">
           <div
             className="video fh5co-video"
             style={{ backgroundImage: `url("static/images/cover_bg_1.jpg")` }}
@@ -192,7 +199,7 @@ export const Layout = () => {
               </div>
             </form>
           </div>
-        </div> */}
+        </div>
         <div id="fh5co-footer">
           <div className="container">
             <div className="row">
@@ -219,7 +226,7 @@ export const Layout = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

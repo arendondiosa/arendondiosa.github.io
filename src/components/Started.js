@@ -2,7 +2,7 @@ import React from "react";
 
 export const Started = () => {
   return (
-    <div id="fh5co-started" className="fh5co-bg-dark">
+    <div id="fh5co-started" className="fh5co-bg-dark fh5co-bg-dark">
       <div className="overlay"></div>
       <div className="container">
         <div className="row justify-content-center animate-box">

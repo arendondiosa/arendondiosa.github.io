@@ -2,7 +2,7 @@ import React from "react";
 
 export const Features = () => {
   return (
-    <div id="fh5co-features" className="animate-box">
+    <div id="fh5co-features" className="fh5co-bg-dark animate-box">
       <div className="container">
         <div className="services-padding">
           <div className="row justify-content-center">

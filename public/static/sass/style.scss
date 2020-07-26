@@ -8,7 +8,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #FF9000 !default;
+$brand-primary: #18325a !default;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -20,11 +20,10 @@ $brand-selection-color: #f9f6f0;
 $brand-overlay-color: #4c4a8a;
 $brand-bg-color: $brand-white;
 
-$brand-bg-dark: #2F3C4F;
+$brand-bg-dark: #0d2244;
 
 $input-border-focus:  $brand-primary !default;
 $form-group-margin-bottom:       30px !default;
-
 
 
 // Mixin
@@ -187,7 +186,7 @@ h1, h2, h3, h4, h5, h6, figure {
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba($brand-primary,.9);
+        background: $brand-primary;
     }
     .display-t{
         width: 100%;
@@ -295,7 +294,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 #fh5co-features {
-    background: $brand-primary;
+    background: $brand-bg-dark;
     h2 {
         color: $brand-white;
     }
@@ -371,7 +370,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-bg-dark{
     background: $brand-bg-dark;
-    background: $brand-primary;
     .fh5co-heading{
         h2{
             color: $brand-white !important;
@@ -1279,4 +1277,10 @@ input[type="text"] {
     .js & {
         opacity: 0;
     }
+}
+
+// NavBar
+
+nav {
+    background-color: $brand-primary;
 }

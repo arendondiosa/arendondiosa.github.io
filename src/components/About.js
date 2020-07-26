@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div id="fh5co-about" className="animate-box">
+    <div id="fh5co-about" className="fh5co-bg-dark animate-box">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
