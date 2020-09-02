@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
-// import { About } from "./components/About";
+import { About } from "./components/About";
 // import { Blog } from "./components/Blog";
 // import { Features } from "./components/Features";
 // import { Resume } from "./components/Resume";
@@ -117,8 +117,8 @@ export const Layout = () => {
           </div>
         </header>
 
-        {/* <About />
-        <Resume />
+        <About />
+        {/* <Resume />
         <Features />
         <Skills />
         <Work />
