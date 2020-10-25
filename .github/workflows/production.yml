@@ -31,5 +31,9 @@ jobs:
       #   run: yarn test
       - name: Build
         run: yarn predeploy
+      - name: Git setup
+        run: |
+          git config --global user.email "alejandro@rendon.co"
+          git config --global user.name "Alejandro E. Rendon"
       - name: Deploy
         run: yarn deploy
