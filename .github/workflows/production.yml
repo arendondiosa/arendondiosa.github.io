@@ -1,0 +1,35 @@
+name: Production CI
+
+on:
+  pull_request:
+    branches:
+      - develop
+  push:
+    branches:
+      - develop
+
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          ref: develop
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.4"
+      - name: Install node dependencies
+        run: yarn install
+      - name: Show node environment
+        run: |
+          node --version
+          npm --version
+      - name: Run Tests
+        run: yarn test
+      - name: Build
+        run: yarn predeploy
+      - name: Deploy
+        run: yarn deploy
