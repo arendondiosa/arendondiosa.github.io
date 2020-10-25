@@ -36,4 +36,6 @@ jobs:
           git config --global user.email "alejandro@rendon.co"
           git config --global user.name "Alejandro E. Rendon"
       - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: yarn deploy
