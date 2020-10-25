@@ -32,10 +32,11 @@ jobs:
       - name: Build
         run: yarn predeploy
       - name: Git setup
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
           git config --global user.email "alejandro@rendon.co"
           git config --global user.name "Alejandro E. Rendon"
+          git remote set-url origin arendondiosa:$GITHUB_TOKEN@github.com/arendondiosa/arendondiosa.github.io
       - name: Deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: yarn deploy
