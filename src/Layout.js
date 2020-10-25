@@ -3,7 +3,7 @@ import { Navbar } from "react-bootstrap";
 // import { About } from "./components/About";
 // import { Blog } from "./components/Blog";
 // import { Features } from "./components/Features";
-// import { Resume } from "./components/Resume";
+import { Resume } from "./components/Resume";
 // import { Skills } from "./components/Skills";
 // import { Started } from "./components/Started";
 // import { Work } from "./components/Work";
@@ -117,14 +117,16 @@ export const Layout = () => {
           </div>
         </header>
 
-        {/* <About />
+        {/* <About /> */}
         <Resume />
+        {/*
         <Features />
         <Skills />
         <Work />
         <Blog />
         <Started />
 
+        
         <div id="fh5co-consult" className="fh5co-bg-dark">
           <div
             className="video fh5co-video"
