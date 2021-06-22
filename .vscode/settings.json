@@ -1,0 +1,16 @@
+{
+    "editor.rulers": [
+        80,
+        88
+    ],
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnPaste": true
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnPaste": true
+    }
+}
