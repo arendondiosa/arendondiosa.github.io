@@ -1,10 +1,13 @@
 import React from 'react'
 
+import Layout from "../../components/Layout/Layout";
+
+
 const Other = () => {
   return (
-    <div>
+    <Layout>
       <h1>Other page</h1>
-    </div>
+    </Layout>
   )
 }
 
