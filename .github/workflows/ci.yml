@@ -72,7 +72,7 @@ jobs:
       - name: Install node dependencies
         run: |
           cd rendon-co/
-          npm stylelint stylelint-config-standard
+          npm install stylelint stylelint-config-standard
       - name: Show node environment
         run: |
           node --version
