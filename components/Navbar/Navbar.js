@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import React from 'react';
+import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
-import ThemeToggle from "../../components/ThemeToggle";
+import ThemeToggle from '../../components/ThemeToggle';
 
 const NavbarSite = () => {
   return (
@@ -28,10 +28,7 @@ const NavbarSite = () => {
           <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-              <ThemeToggle
-                type="button"
-                onClick={() => setActiveTheme(inactiveTheme)}
-              />
+              <ThemeToggle type="button" />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -1,11 +1,9 @@
-import { useState, useEffect } from "react";
-import { Button } from "react-bootstrap";
-
-import styles from "../styles/ThemeToggle.module.css";
+import React, { useState, useEffect } from 'react';
+import { Button } from 'react-bootstrap';
 
 const ThemeToggle = () => {
-  const [activeTheme, setActiveTheme] = useState("light");
-  const inactiveTheme = activeTheme === "light" ? "dark" : "light";
+  const [activeTheme, setActiveTheme] = useState('light');
+  const inactiveTheme = activeTheme === 'light' ? 'dark' : 'light';
 
   useEffect(() => {
     document.body.dataset.theme = activeTheme;
@@ -14,9 +12,9 @@ const ThemeToggle = () => {
   return (
     <Button
       onClick={() => setActiveTheme(inactiveTheme)}
-      variant="outline-${activeTheme === 'dark' ? 'dark' : 'light' }}"
+      variant={`outline-${activeTheme === 'dark' ? 'dark' : 'light'}`}
     >
-      {activeTheme === "dark" ? "☀️" : "🌙"}
+      {activeTheme === 'dark' ? '☀️' : '🌙'}
     </Button>
   );
 };

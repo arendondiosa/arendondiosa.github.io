@@ -44,7 +44,7 @@ jobs:
       - name: Run JS lint
         run: |
           cd rendon-co/
-          npm run lint
+          npm run lint-only
   format-css:
     name: CSS Code Format
     runs-on: ubuntu-latest

@@ -1,9 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import React from 'react';
+import styles from '../styles/Home.module.css';
 
-import Layout from "../components/Layout/Layout";
-import ThemeToggle from "../components/ThemeToggle";
+import Layout from '../components/Layout/Layout';
+import ThemeToggle from '../components/ThemeToggle';
 
 export default function Home() {
   return (
@@ -13,13 +12,10 @@ export default function Home() {
           <h1 className={styles.title}>
             Welcome to <a href="https://nextjs.org">Next.js!</a>
           </h1>
-          <ThemeToggle
-            type="button"
-            onClick={() => setActiveTheme(inactiveTheme)}
-          />
+          <ThemeToggle type="button" />
 
           <p className={styles.description}>
-            Get started by editing{" "}
+            Get started by editing{' '}
             <code className={styles.code}>pages/index.js</code>
           </p>
 
