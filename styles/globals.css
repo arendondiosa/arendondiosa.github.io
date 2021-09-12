@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   background: var(--color-bg-primary);
@@ -24,7 +28,7 @@ body[data-theme="dark"] {
   --color-bg-toggle: #a9a9a9;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-secondary);
 }
 
@@ -68,7 +72,7 @@ h4,
 h5,
 h6,
 figure {
-  color: #000;
+  color: var(--color-text-secondary);
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -105,6 +109,8 @@ a:focus {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+/* Custom Class */
+
+.content {
+  margin: 100px 0;
 }
