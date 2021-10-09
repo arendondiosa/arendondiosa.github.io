@@ -3,9 +3,17 @@ import PropTypes from 'prop-types';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/globals.css';
+import Head from 'next/head';
 
 const MyApp = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Component {...pageProps} />;
+    </>
+  );
 };
 
 MyApp.propTypes = {
