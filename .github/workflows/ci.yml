@@ -11,8 +11,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      NEXT_PUBLIC_BASE_PATH: /arendondiosa.github.io
+
     steps:
       - name: Get files
         uses: actions/checkout@v2
