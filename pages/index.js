@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
-import { Container } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 
 import About from '../components/Content/About';
 import Projects from '../components/Content/Projects';
@@ -18,12 +17,17 @@ const Home = ({ posts }) => {
       </Container>
       <div>
         {posts.map((post) => (
-          <Link key={post.slug} href={`/blog/${post.slug}`}>
-            <a>
-              <h2>{post.title} &rarr;</h2>
-              <p>{post.date}</p>
-            </a>
-          </Link>
+          <Card key={post.slug}>
+            <Card.Header as="h5">{post.title}</Card.Header>
+            <Card.Body>
+              <Card.Title>{post.title}</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                Card Subtitle
+              </Card.Subtitle>
+              <Card.Text>{post.date}</Card.Text>
+              <Card.Link href={`/blog/${post.slug}`}>Card Link</Card.Link>
+            </Card.Body>
+          </Card>
         ))}
       </div>
     </Layout>

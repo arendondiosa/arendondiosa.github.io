@@ -1,12 +1,17 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faLinkedinIn,
-  faGithubAlt,
   faPython,
   faJs,
+  faReact,
+  faHtml5,
+  faCss3,
+  faGitAlt,
+  faGithubAlt,
+  faGitlab,
 } from '@fortawesome/free-brands-svg-icons';
 import { Col, Row } from 'react-bootstrap';
+import Skill from './Skill';
+import Social from '../Footer/components/Social';
 
 const About = () => {
   return (
@@ -18,8 +23,7 @@ const About = () => {
           </Row>
           <Row>
             <Col sm lg="12">
-              <FontAwesomeIcon icon={faGithubAlt} fixedWidth />
-              <FontAwesomeIcon icon={faLinkedinIn} fixedWidth />
+              <Social />
             </Col>
           </Row>
         </Col>
@@ -41,10 +45,18 @@ const About = () => {
               </li>
             </ul>
           </Row>
-          <Row>
+          <Row className="justify-content-center">
             <Col xs lg="12">
-              <FontAwesomeIcon icon={faPython} fixedWidth />
-              <FontAwesomeIcon icon={faJs} fixedWidth />
+              <Skill icon={faHtml5} name="HTML5" color="#0db1c4" />
+              <Skill icon={faCss3} name="CSS3" color="#0db1c4" />
+              <Skill icon={faPython} name="Python" color="#0d38ae" />
+              <Skill icon={faJs} name="Javascript" color="#c4c40d" />
+              <Skill icon={faReact} name="ReactJS" color="#0db1c4" />
+            </Col>
+            <Col xs lg="12">
+              <Skill icon={faGitAlt} name="Git" color="#0db1c4" />
+              <Skill icon={faGithubAlt} name="GitHub" color="#0db1c4" />
+              <Skill icon={faGitlab} name="GitLab" color="#0db1c4" />
             </Col>
           </Row>
         </Col>
