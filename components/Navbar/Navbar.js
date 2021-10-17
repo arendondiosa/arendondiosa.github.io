@@ -7,7 +7,7 @@ const NavbarSite = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">Alejandro E. Rendon</Navbar.Brand>
+        <Navbar.Brand href="/">Alejandro E. Rendon</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           {/* <Nav className="me-auto">
@@ -26,7 +26,7 @@ const NavbarSite = () => {
           </Nav> */}
           <Nav>
             {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
-            <Nav.Link eventKey={2} href="#memes">
+            <Nav.Link eventKey={2}>
               <ThemeToggle type="button" />
             </Nav.Link>
           </Nav>

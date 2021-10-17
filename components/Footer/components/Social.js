@@ -4,20 +4,33 @@ import {
   faLinkedin,
   faTwitterSquare,
 } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import SocialIcon from './SocialIcon';
 
 const Social = () => {
   return (
     <div style={styles.container}>
-      <a href="https://github.com/arendondiosa" target="blank_">
-        <FontAwesomeIcon icon={faGithubSquare} fixedWidth size="3x" />
-      </a>
-      <a href="https://linkedin.com/in/arendondiosa" target="blank_">
-        <FontAwesomeIcon icon={faLinkedin} fixedWidth size="3x" />
-      </a>
-      <a href="https://twitter.com/arendondiosa" target="blank_">
-        <FontAwesomeIcon icon={faTwitterSquare} fixedWidth size="3x" />
-      </a>
+      <SocialIcon
+        color="#333537"
+        icon={faGithubSquare}
+        size="3x"
+        link="https://github.com/arendondiosa"
+        target="blank_"
+      />
+      <SocialIcon
+        color="#0d75b5"
+        icon={faLinkedin}
+        size="3x"
+        link="https://linkedin.com/in/arendondiosa"
+        target="blank_"
+      />
+      <SocialIcon
+        color="#0db1c4"
+        icon={faTwitterSquare}
+        size="3x"
+        link="https://twitter.com/arendondiosa"
+        target="blank_"
+      />
     </div>
   );
 };
@@ -27,7 +40,6 @@ const styles = {
     textAlign: 'center',
     margin: '10px 0',
   },
-  icon: {},
 };
 
 export default Social;
