@@ -1,30 +1,5 @@
-const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
-
-const nextConfig = {
-  webpack: (config, options) => {
-    return config;
-  },
-  eslint: {
-    // ESLint managed on the workspace level
-    ignoreDuringBuilds: true,
-  },
-  images: {
-    disableStaticImages: true,
-  },
+module.exports = {
+  reactStrictMode: true,
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
 };
-
-const config = withPlugins(
-  [
-    [
-      optimizedImages,
-      {
-        // optimisation disabled by default, to enable check https://github.com/cyrilwanner/next-optimized-images
-        optimizeImages: true,
-      },
-    ],
-  ],
-  nextConfig
-);
-
-module.exports = config;

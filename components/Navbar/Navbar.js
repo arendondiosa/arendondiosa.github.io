@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 
 import ThemeToggle from '../../components/ThemeToggle';
 
@@ -10,7 +10,7 @@ const NavbarSite = () => {
         <Navbar.Brand href="#home">Alejandro E. Rendon</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="me-auto">
+          {/* <Nav className="me-auto">
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">Link</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
@@ -23,9 +23,9 @@ const NavbarSite = () => {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-          </Nav>
+          </Nav> */}
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
+            {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
             <Nav.Link eventKey={2} href="#memes">
               <ThemeToggle type="button" />
             </Nav.Link>

@@ -12,6 +12,7 @@ import {
 import { Col, Row } from 'react-bootstrap';
 import Skill from './Skill';
 import Social from '../Footer/components/Social';
+import { prefix } from '../../utils/prefix';
 
 const About = () => {
   return (
@@ -19,7 +20,7 @@ const About = () => {
       <Row>
         <Col sm lg="4">
           <Row>
-            <img src={'profile.png'} />
+            <img src={`${prefix}/profile.png`} />
           </Row>
           <Row>
             <Col sm lg="12">
@@ -27,7 +28,7 @@ const About = () => {
             </Col>
           </Row>
         </Col>
-        <Col>
+        <Col sm lg="8">
           <Row>
             <h1>🧑🏻‍🦳 Alejandro E. Rendon</h1>
             <ul>
@@ -61,8 +62,17 @@ const About = () => {
           </Row>
         </Col>
       </Row>
+      <Row>
+        <h1 style={styles.message}>🛠 Work in Progress 👷🏻‍♂️</h1>
+      </Row>
     </>
   );
+};
+
+const styles = {
+  message: {
+    textAlign: 'center',
+  },
 };
 
 export default About;

@@ -25,7 +25,7 @@ const styles = {
 };
 
 Skill.propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.any,
   name: PropTypes.string,
   color: PropTypes.string,
 };

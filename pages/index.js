@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import About from '../components/Content/About';
-import Projects from '../components/Content/Projects';
 
 import Layout from '../components/Layout/Layout';
 import { getAllFilesMetadata } from '../lib/mdx';
@@ -13,9 +12,9 @@ const Home = ({ posts }) => {
     <Layout>
       <Container className="content">
         <About />
-        <Projects />
+        {/* <Projects /> */}
       </Container>
-      <div>
+      {/* <div>
         {posts.map((post) => (
           <Card key={post.slug}>
             <Card.Header as="h5">{post.title}</Card.Header>
@@ -29,7 +28,7 @@ const Home = ({ posts }) => {
             </Card.Body>
           </Card>
         ))}
-      </div>
+      </div> */}
     </Layout>
   );
 };

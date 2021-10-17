@@ -12,9 +12,12 @@ const Social = () => {
       <a href="https://github.com/arendondiosa" target="blank_">
         <FontAwesomeIcon icon={faGithubSquare} fixedWidth size="3x" />
       </a>
-
-      <FontAwesomeIcon icon={faLinkedin} fixedWidth size="3x" />
-      <FontAwesomeIcon icon={faTwitterSquare} fixedWidth size="3x" />
+      <a href="https://linkedin.com/in/arendondiosa" target="blank_">
+        <FontAwesomeIcon icon={faLinkedin} fixedWidth size="3x" />
+      </a>
+      <a href="https://twitter.com/arendondiosa" target="blank_">
+        <FontAwesomeIcon icon={faTwitterSquare} fixedWidth size="3x" />
+      </a>
     </div>
   );
 };
