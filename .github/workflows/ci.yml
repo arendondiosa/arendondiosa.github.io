@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 14.17.x
       - name: Install packages
-        run: npm ci
+        run: npm install
       - name: Build project
         run: npm run build
       - name: Export static files
