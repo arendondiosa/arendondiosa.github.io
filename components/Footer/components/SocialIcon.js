@@ -12,7 +12,7 @@ const SocialIcon = ({ icon, link, target, color, size }) => {
 };
 
 SocialIcon.propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.any,
   link: PropTypes.string,
   target: PropTypes.string,
   color: PropTypes.string,

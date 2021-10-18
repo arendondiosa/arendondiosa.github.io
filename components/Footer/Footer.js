@@ -1,18 +1,16 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 
 import { Container, Row, Col } from 'react-bootstrap';
+import Social from './components/Social';
 
 const Footer = () => {
   return (
     <Container>
       <Row>
-        <Col>1 of 3</Col>
-        <Col md="auto">Variable width content</Col>
+        <Col></Col>
+        <Col md="auto"></Col>
         <Col xs lg="2">
-          <FontAwesomeIcon icon={faGithubAlt} fixedWidth />
-          <FontAwesomeIcon icon={faLinkedinIn} fixedWidth />
+          <Social />
         </Col>
       </Row>
     </Container>

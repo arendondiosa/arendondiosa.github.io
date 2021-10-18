@@ -37,7 +37,6 @@ const Social = () => {
 
 const styles = {
   container: {
-    textAlign: 'center',
     margin: '10px 0',
   },
 };
