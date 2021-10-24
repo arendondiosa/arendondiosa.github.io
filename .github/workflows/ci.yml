@@ -13,6 +13,8 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     timeout-minutes: 3
+    env:
+      NEXT_PUBLIC_BASE_PATH: .
     steps:
       - name: Get files
         uses: actions/checkout@v2
