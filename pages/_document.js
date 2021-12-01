@@ -23,12 +23,12 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <script defer src="assets/fontawesome/js/all.min.js"></script>
+          <script defer src="/assets/fontawesome/js/all.min.js"></script>
 
           <link
             id="theme-style"
             rel="stylesheet"
-            href="assets/css/theme-1.css"
+            href="/assets/css/theme-3.css"
           />
         </Head>
         <body>
