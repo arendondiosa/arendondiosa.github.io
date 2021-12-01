@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -70,10 +71,12 @@ const NavbarSite = () => {
 
           <ul className="navbar-nav flex-column text-start">
             <li className="nav-item">
-              <a className="nav-link active" href="index.html">
-                <i className="fas fa-home fa-fw me-2"></i>Blog Home{' '}
-                <span className="sr-only">(current)</span>
-              </a>
+              <Link href="/">
+                <a className="nav-link active">
+                  <i className="fas fa-home fa-fw me-2"></i>Blog Home{' '}
+                  <span className="sr-only">(current)</span>
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="blog-post.html">
@@ -81,9 +84,11 @@ const NavbarSite = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="about.html">
-                <i className="fas fa-user fa-fw me-2"></i>About Me
-              </a>
+              <Link href="about">
+                <a className="nav-link">
+                  <i className="fas fa-user fa-fw me-2"></i>About Me
+                </a>
+              </Link>
             </li>
           </ul>
 

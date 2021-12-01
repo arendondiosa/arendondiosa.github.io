@@ -34,6 +34,8 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="assets/plugins/popper.min.js"></script>
+          <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         </body>
       </Html>
     );
