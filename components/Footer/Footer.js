@@ -1,19 +1,21 @@
 import React from 'react';
 
-import { Container, Row, Col } from 'react-bootstrap';
-import Social from './components/Social';
-
 const Footer = () => {
   return (
-    <Container>
-      <Row>
-        <Col></Col>
-        <Col md="auto"></Col>
-        <Col xs lg="2">
-          <Social />
-        </Col>
-      </Row>
-    </Container>
+    <footer className="footer text-center py-2 theme-bg-dark">
+      <small className="copyright">
+        Designed with{' '}
+        <i className="fas fa-heart" style={{ color: '#fb866a' }}></i> by{' '}
+        <a
+          href="https://themes.3rdwavemedia.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Xiaoying Riley
+        </a>{' '}
+        for developers
+      </small>
+    </footer>
   );
 };
 

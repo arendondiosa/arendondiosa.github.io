@@ -9,30 +9,6 @@ on:
       - dev
 
 jobs:
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    timeout-minutes: 3
-    steps:
-      - name: Get files
-        uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.17.x
-      - name: Install packages
-        run: npm install
-      - name: Build project
-        run: npm run build
-      - name: Export static files
-        run: npm run export
-      - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: out
   format-js:
     name: JS Code Format
     runs-on: ubuntu-latest

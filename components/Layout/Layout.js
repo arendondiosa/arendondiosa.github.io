@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container } from 'react-bootstrap';
 
 import NavbarSite from '../../components/Navbar/Navbar';
 import Footer from '../Footer/Footer';
@@ -9,8 +8,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <NavbarSite />
-      <Container>{children}</Container>
-      <Footer />
+      <div className="main-wrapper">
+        {children}
+        <Footer />
+      </div>
     </>
   );
 };

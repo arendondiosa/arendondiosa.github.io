@@ -22,6 +22,14 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
             rel="stylesheet"
           />
+
+          <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+          <link
+            id="theme-style"
+            rel="stylesheet"
+            href="assets/css/theme-1.css"
+          />
         </Head>
         <body>
           <Main />
