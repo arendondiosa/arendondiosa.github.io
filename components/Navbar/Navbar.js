@@ -29,7 +29,7 @@ const NavbarSite = () => {
           <div className="profile-section pt-3 pt-lg-0">
             <img
               className="profile-image mb-3 rounded-circle mx-auto"
-              src="assets/images/profile.png"
+              src="/assets/images/profile.png"
               alt="image"
             />
 

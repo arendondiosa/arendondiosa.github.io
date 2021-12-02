@@ -10,11 +10,9 @@ const Post = ({ source, frontmatter }) => {
       <article className="blog-post px-3 py-5 p-md-5">
         <div className="container single-col-max-width">
           <header className="blog-post-header">
-            <h2 className="title mb-2">
-              Why Every Developer Should Have A Blog
-            </h2>
+            <h2 className="title mb-2">{frontmatter.title}</h2>
             <div className="meta mb-3">
-              <span className="date">Published 2 days ago</span>
+              <span className="date">{frontmatter.date}</span>
               <span className="time">5 min read</span>
               <span className="comment">
                 <a className="text-link" href="#">
@@ -29,7 +27,7 @@ const Post = ({ source, frontmatter }) => {
               <a href="https://made4dev.com">
                 <img
                   className="img-fluid"
-                  src="assets/images/blog/blog-post-banner.jpg"
+                  src="/assets/images/blog/blog-post-banner.jpg"
                   alt="image"
                 />
               </a>
@@ -231,7 +229,7 @@ const Post = ({ source, frontmatter }) => {
             <a href="https://made4dev.com" target="_blank" rel="noreferrer">
               <img
                 className="img-fluid"
-                src="assets/images/promo-banner.jpg"
+                src="/assets/images/promo-banner.jpg"
                 alt="image"
               />
             </a>
