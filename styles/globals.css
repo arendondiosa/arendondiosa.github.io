@@ -1,12 +1,95 @@
+:root {
+  --primary-color: #e74c3c;
+  --secondary-color: #c0392b;
+  --background-primary: #292929;
+  --background-secondary: #253536;
+  --background-light: #ecf0f1;
+  --font-color-primary: #ecf0f1;
+  --font-color-secondary: #ecf0f1;
+  --font-color-light: #292929;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: 'Source Code Pro', monospace;
+  color: var(--font-color-primary);
+  font-family: "Source Code Pro", monospace;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
   transition: background 0.25s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+.table {
+  color: var(--font-color-primary);
+}
+
+.table thead {
+  color: var(--primary-color);
+}
+
+.table tbody th {
+  color: var(--font-color-primary);
+}
+
+.table tbody tr td {
+  color: var(--font-color-primary);
+}
+
+.header {
+  background: var(--primary-color);
+}
+
+.social-list a:hover {
+  color: var(--secondary-color);
+}
+
+.main-wrapper {
+  background: var(--background-primary);
+}
+
+.blog-nav .nav-link {
+  background-color: var(--primary-color);
+}
+
+.blog-nav .nav-link:hover {
+  background-color: var(--secondary-color);
+}
+
+.blog-nav .nav-link-prev {
+  border-right: 1px solid var(--secondary-color);
+}
+
+.blog-post .blockquote {
+  border-left: 2px solid var(--secondary-color);
+}
+
+.theme-bg-light {
+  background: var(--background-light) !important;
+  color: var(--font-color-light);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }

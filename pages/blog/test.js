@@ -168,7 +168,7 @@ const test = () => {
             <script
               async
               src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
+              charSet="utf-8"
             ></script>
 
             <h3 className="mt-5 mb-3">Video Example</h3>
