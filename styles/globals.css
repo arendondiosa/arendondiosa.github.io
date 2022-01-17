@@ -6,8 +6,8 @@ html,
 body {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
-  font-family: 'Source Code Pro', monospace;
-  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
   transition: background 0.25s ease-in-out;
@@ -23,8 +23,8 @@ body[data-theme="light"] {
 
 body[data-theme="dark"] {
   --color-text-primary: #e3e3e3;
-  --color-text-secondary: #ff6b00;
-  --color-bg-primary: #15232d;
+  --color-text-secondary: #f3ba33;
+  --color-bg-primary: #000;
   --color-bg-toggle: #a9a9a9;
 }
 
@@ -78,9 +78,13 @@ h5,
 h6,
 figure {
   color: var(--color-text-secondary);
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
   margin: 0 0 20px 0;
+}
+
+h2 {
+  font-size: 4em;
 }
 
 ::-webkit-selection {
@@ -119,3 +123,36 @@ a:focus {
 .content {
   margin: 100px 0;
 }
+
+/* Navbar */
+.custom-navbar {
+  background-color: #000 !important;
+}
+
+.custom-navbar-icon {
+  color: #fff;
+}
+
+.custom-navbar-link {
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+/* .custom-navbar-link:hover {
+  font-weight: 700;
+}
+
+.custom-navbar-link::before {
+  content: "\A";
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  position: absolute;
+  border-radius: 50%;
+  background: red;
+  display: inline-block;
+  transition: .15s ease-in-out;
+  opacity: 1;
+} */

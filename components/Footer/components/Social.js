@@ -1,8 +1,8 @@
 import React from 'react';
 import {
-  faGithubSquare,
-  faLinkedin,
-  faTwitterSquare,
+  faGithubAlt,
+  faLinkedinIn,
+  faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 
 import SocialIcon from './SocialIcon';
@@ -12,22 +12,22 @@ const Social = () => {
     <div style={styles.container}>
       <SocialIcon
         color="#333537"
-        icon={faGithubSquare}
-        size="3x"
+        icon={faGithubAlt}
+        size="2x"
         link="https://github.com/arendondiosa"
         target="blank_"
       />
       <SocialIcon
         color="#0d75b5"
-        icon={faLinkedin}
-        size="3x"
+        icon={faLinkedinIn}
+        size="2x"
         link="https://linkedin.com/in/arendondiosa"
         target="blank_"
       />
       <SocialIcon
         color="#0db1c4"
-        icon={faTwitterSquare}
-        size="3x"
+        icon={faTwitter}
+        size="2x"
         link="https://twitter.com/arendondiosa"
         target="blank_"
       />

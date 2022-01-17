@@ -11,23 +11,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { Col, Row } from 'react-bootstrap';
 import Skill from './Skill';
-import Social from '../Footer/components/Social';
 import { prefix } from '../../utils/prefix';
 
 const About = () => {
   return (
     <>
       <Row>
-        <Col sm lg="4">
-          <Row>
-            <img src={`${prefix}/profile.png`} />
-          </Row>
-          <Row>
-            <Col sm lg="12">
-              <Social />
-            </Col>
-          </Row>
-        </Col>
         <Col sm lg="8">
           <Row>
             <h1>🧑🏻‍🦳 Alejandro E. Rendon</h1>
@@ -59,6 +48,11 @@ const About = () => {
               <Skill icon={faGithubAlt} name="GitHub" color="#0db1c4" />
               <Skill icon={faGitlab} name="GitLab" color="#0db1c4" />
             </Col>
+          </Row>
+        </Col>
+        <Col sm lg="4">
+          <Row>
+            <img src={`${prefix}/profile.png`} />
           </Row>
         </Col>
       </Row>
