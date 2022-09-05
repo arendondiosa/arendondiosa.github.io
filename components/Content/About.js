@@ -1,72 +1,69 @@
 import React from 'react';
-import {
-  faPython,
-  faJs,
-  faReact,
-  faHtml5,
-  faCss3,
-  faGitAlt,
-  faGithubAlt,
-  faGitlab,
-} from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
+import { FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
 import { Col, Row } from 'react-bootstrap';
-import Skill from './Skill';
+
 import { prefix } from '../../utils/prefix';
 
 const About = () => {
   return (
     <>
       <Row>
-        <Col sm lg="8">
+        <Col sm lg="2">
           <Row>
-            <h1>🧑🏻‍🦳 Alejandro E. Rendon</h1>
-            <ul>
-              <li>Ingeniero de Software. +4 años de experiencia profesional</li>
-              <li>
-                Educación:
-                <ul>
-                  <li>Ingeniero de Sistemas y Computación</li>
-                  <li>
-                    Maestría en Ing. Sistemas y Computación (Enfoque en
-                    Computación de Alto Rendimiento (HPC) e Inteligencia
-                    Artificial)
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <div className="photo-container">
+              <img src={`${prefix}/profile.png`} className="photo" />
+            </div>
           </Row>
-          <Row className="justify-content-center">
-            <Col xs lg="12">
-              <Skill icon={faHtml5} name="HTML5" color="#0db1c4" />
-              <Skill icon={faCss3} name="CSS3" color="#0db1c4" />
-              <Skill icon={faPython} name="Python" color="#0d38ae" />
-              <Skill icon={faJs} name="Javascript" color="#c4c40d" />
-              <Skill icon={faReact} name="ReactJS" color="#0db1c4" />
+        </Col>
+        <Col sm lg="10">
+          <Row>
+            <Col sm lg="8">
+              <h1>Alejandro E. Rendon</h1>
+              <h2>Ingeniero de Software</h2>
             </Col>
-            <Col xs lg="12">
-              <Skill icon={faGitAlt} name="Git" color="#0db1c4" />
-              <Skill icon={faGithubAlt} name="GitHub" color="#0db1c4" />
-              <Skill icon={faGitlab} name="GitLab" color="#0db1c4" />
+            <Col sm lg="4">
+              <div className="social-container">
+                <Link href="/">
+                  <a className="social-icon">
+                    <FiTwitter />
+                  </a>
+                </Link>
+                <Link href="/">
+                  <a className="social-icon">
+                    <FiGithub />
+                  </a>
+                </Link>
+                <Link href="#">
+                  <a className="social-icon">
+                    <FiLinkedin />
+                  </a>
+                </Link>
+              </div>
+            </Col>
+          </Row>
+          <hr />
+          <Row>
+            <Col>
+              <p>
+                - Ingeniero de Software. +4 años de experiencia profesional -
+                Educación: Ingeniero de Sistemas y Computación con Maestría en
+                Ing. Sistemas y Computación (Enfoque en Computación de Alto
+                Rendimiento (HPC) e Inteligencia Artificial) - Qué puedo hacer?
+                - Sitios y aplicaciones web: Desde landing pages hasta sitios
+                web con funcionalidades y manejos de datos. Todo el ciclo del
+                desarrollo de software desde levantamiento de requerimientos
+                hasta producción (A esto es lo que me dedico en mi trabajo) -
+                Aplicativos móviles (Funcionalidades simples pero compatibles en
+                Android y IOS) - Manejo de Photoshop e Illustrator. Edición de
+                videos (Lo aprendí por Hobby)
+              </p>
             </Col>
           </Row>
         </Col>
-        <Col sm lg="4">
-          <Row>
-            <img src={`${prefix}/profile.png`} />
-          </Row>
-        </Col>
-      </Row>
-      <Row>
-        <h1 style={styles.message}>🛠 Work in Progress 👷🏻‍♂️</h1>
       </Row>
     </>
   );
-};
-
-const styles = {
-  message: {
-    textAlign: 'center',
-  },
 };
 
 export default About;

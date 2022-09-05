@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Head from 'next/head';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import '../styles/globals.css';
-import Head from 'next/head';
+import 'styles/globals.css';
+import 'styles/about.css';
 
 const MyApp = ({ Component, pageProps }) => {
   return (

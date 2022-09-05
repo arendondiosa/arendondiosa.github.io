@@ -1,11 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faGithubAlt,
-  faLinkedinIn,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
-
 import { Container, Navbar, Nav } from 'react-bootstrap';
 
 import ThemeToggle from '../../components/ThemeToggle';
@@ -43,7 +36,7 @@ export const NavbarSite = () => {
             <Nav.Link eventKey={2}>
               <ThemeToggle type="button" />
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               className="custom-navbar-icon"
               href="https://github.com/arendondiosa"
               target="blank_"
@@ -63,7 +56,7 @@ export const NavbarSite = () => {
               target="blank_"
             >
               <FontAwesomeIcon icon={faTwitter} fixedWidth size="2x" />
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

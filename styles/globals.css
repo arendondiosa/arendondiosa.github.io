@@ -37,6 +37,10 @@ h6 {
   color: var(--color-text-secondary);
 }
 
+p {
+  font-size: 1.2em;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -83,8 +87,12 @@ figure {
   margin: 0 0 20px 0;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 h2 {
-  font-size: 4em;
+  font-size: 1.5em;
 }
 
 ::-webkit-selection {
@@ -138,21 +146,6 @@ a:focus {
   padding-left: 10px;
 }
 
-/* .custom-navbar-link:hover {
-  font-weight: 700;
+.navbar-nav {
+  margin: auto;
 }
-
-.custom-navbar-link::before {
-  content: "\A";
-  width: 6px;
-  height: 6px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  position: absolute;
-  border-radius: 50%;
-  background: red;
-  display: inline-block;
-  transition: .15s ease-in-out;
-  opacity: 1;
-} */

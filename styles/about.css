@@ -1,0 +1,27 @@
+.social-container {
+  text-align: right;
+}
+
+.social-container .social-icon {
+  font-size: 1.75em;
+  margin: 0 10px;
+}
+
+.photo-container {
+  text-align: left;
+}
+
+.photo {
+  width: 100%;
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .social-container {
+    text-align: center;
+  }
+
+  .photo-container {
+    text-align: center;
+  }
+}
