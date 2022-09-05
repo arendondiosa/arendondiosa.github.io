@@ -28,6 +28,10 @@ body[data-theme="dark"] {
   --color-bg-toggle: #a9a9a9;
 }
 
+.primary-font {
+  font-family: 'Give You Glory', cursive;
+}
+
 h1,
 h2,
 h3,
@@ -129,7 +133,7 @@ a:focus {
 /* Custom Class */
 
 .content {
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 /* Navbar */

@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Skill = ({ icon, name, color }) => {
   return (
-    <div style={{ ...styles.container, borderColor: color, color: color }}>
-      <FontAwesomeIcon icon={icon} fixedWidth />
+    <li
+      className="skill-item"
+      style={{ ...styles.container, borderColor: color, color: color }}
+    >
+      {icon}
       <span style={styles.label}>{name}</span>
-    </div>
+    </li>
   );
 };
 
 const styles = {
   container: {
-    border: '2px solid black',
+    border: '1px solid black',
     borderRadius: '25px',
     display: 'inline-block',
     margin: '5px',

@@ -5,6 +5,8 @@ import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'styles/globals.css';
 import 'styles/about.css';
+import 'styles/skills.css';
+import 'styles/projects.css';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
