@@ -1,24 +1,11 @@
 import React from 'react';
-import Link from 'next/link';
-import {
-  FiLinkedin,
-  FiGithub,
-  FiTwitter,
-  FiUser,
-  FiFile,
-} from 'react-icons/fi';
-import {
-  DiHtml5,
-  DiCss3,
-  DiJsBadge,
-  DiReact,
-  DiNodejsSmall,
-  DiMongodb,
-  DiPython,
-} from 'react-icons/di';
-import { Button, ButtonGroup, Col, Row } from 'react-bootstrap';
+/* import Link from 'next/link';
+import { FiUser, FiFile } from 'react-icons/fi';
+import { Button, ButtonGroup, Col, Row } from 'react-bootstrap'; */
+import { Col, Row } from 'react-bootstrap';
 
 import { prefix } from '../../utils/prefix';
+import Social from 'components/Social';
 
 const About = () => {
   return (
@@ -41,48 +28,35 @@ const About = () => {
                 </div>
               </Col>
               <Col sm lg="4">
-                <div className="social-container">
-                  <Link href="/">
-                    <a className="social-icon">
-                      <FiTwitter />
-                    </a>
-                  </Link>
-                  <Link href="/">
-                    <a className="social-icon">
-                      <FiGithub />
-                    </a>
-                  </Link>
-                  <Link href="#">
-                    <a className="social-icon">
-                      <FiLinkedin />
-                    </a>
-                  </Link>
-                </div>
+                <Social />
               </Col>
             </Row>
             <Row>
               <Col>
-                <p>
-                  - Ingeniero de Software. +4 años de experiencia profesional -
-                  Educación: Ingeniero de Sistemas y Computación con Maestría en
-                  Ing. Sistemas y Computación (Enfoque en Computación de Alto
-                  Rendimiento (HPC) e Inteligencia Artificial).
-                </p>
+                <ul>
+                  <li>
+                    Ingeniero de Software - +4 años de experiencia profesional{' '}
+                  </li>
+                  <li>
+                    Educación: Ingeniero de Sistemas y Computación con Maestría
+                    en Ing. Sistemas y Computación (Enfoque en Computación de
+                    Alto Rendimiento (HPC) e Inteligencia Artificial).
+                  </li>
+                </ul>
               </Col>
             </Row>
-            <Row>
+            {/*  <Row>
               <Col>
-              <ButtonGroup aria-label="buttons-about">
-
-                <Button variant="primary">
-                  <FiUser /> Primary
-                </Button>
-                <Button variant="primary">
-                  <FiFile /> Primary
-                </Button>
-              </ButtonGroup>
+                <ButtonGroup aria-label="buttons-about">
+                  <Button variant="primary">
+                    <FiUser /> Primary
+                  </Button>
+                  <Button variant="primary">
+                    <FiFile /> Primary
+                  </Button>
+                </ButtonGroup>
               </Col>
-            </Row>
+            </Row> */}
           </div>
         </Col>
       </Row>

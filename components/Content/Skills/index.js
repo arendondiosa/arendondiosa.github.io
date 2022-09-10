@@ -20,6 +20,7 @@ import {
   FaDocker,
   FaHandsHelping,
   FaLightbulb,
+  FaRocket,
 } from 'react-icons/fa';
 
 import SkillList from './SkillList';
@@ -117,7 +118,9 @@ const Skills = () => {
   return (
     <>
       <Row>
-        <h2>Habilidades</h2>
+        <h2>
+          <FaRocket /> Habilidades
+        </h2>
       </Row>
       <SkillList skillList={webSkillList} />
       <SkillList skillList={specificSkillList} />

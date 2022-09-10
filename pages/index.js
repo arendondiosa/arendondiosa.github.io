@@ -7,18 +7,18 @@ import About from '../components/Content/About';
 import Layout from '../components/Layout/Layout';
 import { getAllFilesMetadata } from '../lib/mdx';
 
-import Projects from 'components/Content/Projects';
+/* import Projects from 'components/Content/Projects';
 import Skills from 'components/Content/Skills';
-
+ */
 const Home = ({ posts }) => {
   return (
     <Layout>
       <Container className="content">
         <About />
-        <hr />
+        {/* <hr />
         <Projects />
         <hr />
-        <Skills />
+        <Skills /> */}
       </Container>
       {/* <div>
         {posts.map((post) => (

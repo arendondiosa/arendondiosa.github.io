@@ -19,7 +19,7 @@ export const NavbarSite = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto">
-            <Nav.Link className="custom-navbar-link" href="/blog">
+            {/*      <Nav.Link className="custom-navbar-link" href="/blog">
               BLOG
             </Nav.Link>
             <Nav.Link className="custom-navbar-link" href="/projects">
@@ -30,7 +30,7 @@ export const NavbarSite = () => {
             </Nav.Link>
             <Nav.Link className="custom-navbar-link" href="/contact">
               CONTACTO
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
           <Nav>
             <Nav.Link eventKey={2}>
