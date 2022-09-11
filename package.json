@@ -8,8 +8,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "eslint --fix .",
-    "lint-only": "eslint .",
-    "style-lint": "stylelint '**/*.css'"
+    "lint-only": "eslint ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -48,8 +47,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.25.1",
-    "prettier": "2.3.2",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0"
+    "prettier": "2.3.2"
   }
 }

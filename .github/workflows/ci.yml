@@ -69,39 +69,3 @@ jobs:
         run: |
           cd rendon-co/
           npm run lint-only
-  format-css:
-    name: CSS Code Format
-    runs-on: ubuntu-latest
-    timeout-minutes: 3
-    steps:
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.6.0
-        with:
-          access_token: ${{ secrets.ACCESS_TOKEN }}
-      - name: Checkout branch
-        uses: actions/checkout@v2
-        with:
-          path: rendon-co
-      - name: Setup node
-        uses: actions/setup-node@v1
-        with:
-          node-version: "14.17"
-      - name: Cache NPM
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-14.17-${{ hashFiles('rendon-co/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-14.17-${{ hashFiles('rendon-co/package.json') }}
-      - name: Install node dependencies
-        run: |
-          cd rendon-co/
-          npm install stylelint stylelint-config-standard
-      - name: Show node environment
-        run: |
-          node --version
-          npm --version
-      - name: Run JS lint
-        run: |
-          cd rendon-co/
-          npm run style-lint
