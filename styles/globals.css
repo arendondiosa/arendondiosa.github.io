@@ -135,7 +135,7 @@ a:focus {
 
 /* Navbar */
 .custom-navbar {
-  background-color: #000 !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
 .custom-navbar-icon {
@@ -147,6 +147,11 @@ a:focus {
   padding-left: 10px;
 }
 
-.navbar-nav {
-  margin: auto;
+.navbar-nav .nav-link {
+  padding: 15px 0;
+  margin: 0 10px;
+}
+
+.navbar-nav .custom-navbar-link-button-theme {
+  padding: 10px;
 }
