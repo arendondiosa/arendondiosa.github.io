@@ -1,4 +1,4 @@
-.toggleButton {
+.toggle-button {
   position: relative;
   display: flex;
   align-items: center;
@@ -20,19 +20,19 @@
   --toggle-padding: 4px;
 }
 
-.toggleButton:hover {
+.toggle-button:hover {
   box-shadow: 0 0 5px 2px var(--color-bg-toggle);
 }
 
-.toggleButton:focus {
+.toggle-button:focus {
   outline-offset: 5px;
 }
 
-.toggleButton:focus:not(:focus-visible) {
+.toggle-button:focus:not(:focus-visible) {
   outline: none;
 }
 
-.ToggleThumb span {
+.toggle-thumb span {
   position: absolute;
   top: var(--toggle-padding);
   left: var(--toggle-padding);
@@ -44,7 +44,7 @@
   transform: none;
 }
 
-.ToggleThumbDark span {
+.toggle-thumb-dark span {
   position: absolute;
   top: var(--toggle-padding);
   left: var(--toggle-padding);

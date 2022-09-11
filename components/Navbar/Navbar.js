@@ -3,37 +3,63 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 
 import ThemeToggle from '../../components/ThemeToggle';
 
-const NavbarSite = () => {
+export const NavbarSite = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+    <Navbar
+      className="custom-navbar"
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      sticky="top"
+    >
       <Container>
-        <Navbar.Brand href="/">Alejandro E. Rendon</Navbar.Brand>
+        <Navbar.Brand className="custom-navbar-link" href="/">
+          ALEJANDRO E. RENDON
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          {/* <Nav className="me-auto">
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav> */}
+          <Nav className="me-auto">
+            {/*      <Nav.Link className="custom-navbar-link" href="/blog">
+              BLOG
+            </Nav.Link>
+            <Nav.Link className="custom-navbar-link" href="/projects">
+              PROJECTOS
+            </Nav.Link>
+            <Nav.Link className="custom-navbar-link" href="/about">
+              🧑🏻‍🦳 ACERCA DE
+            </Nav.Link>
+            <Nav.Link className="custom-navbar-link" href="/contact">
+              CONTACTO
+            </Nav.Link> */}
+          </Nav>
           <Nav>
-            {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
             <Nav.Link eventKey={2}>
               <ThemeToggle type="button" />
             </Nav.Link>
+            {/* <Nav.Link
+              className="custom-navbar-icon"
+              href="https://github.com/arendondiosa"
+              target="blank_"
+            >
+              <FontAwesomeIcon icon={faGithubAlt} fixedWidth size="2x" />
+            </Nav.Link>
+            <Nav.Link
+              className="custom-navbar-icon"
+              href="https://github.com/arendondiosa"
+              target="blank_"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} fixedWidth size="2x" />
+            </Nav.Link>
+            <Nav.Link
+              className="custom-navbar-icon"
+              href="https://twitter.com/arendondiosa"
+              target="blank_"
+            >
+              <FontAwesomeIcon icon={faTwitter} fixedWidth size="2x" />
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 };
-
-export default NavbarSite;

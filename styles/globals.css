@@ -6,8 +6,8 @@ html,
 body {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
-  font-family: 'Source Code Pro', monospace;
-  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
   transition: background 0.25s ease-in-out;
@@ -23,9 +23,13 @@ body[data-theme="light"] {
 
 body[data-theme="dark"] {
   --color-text-primary: #e3e3e3;
-  --color-text-secondary: #ff6b00;
-  --color-bg-primary: #15232d;
+  --color-text-secondary: #f3ba33;
+  --color-bg-primary: #000;
   --color-bg-toggle: #a9a9a9;
+}
+
+.primary-font {
+  font-family: "Give You Glory", cursive;
 }
 
 h1,
@@ -35,6 +39,11 @@ h4,
 h5,
 h6 {
   color: var(--color-text-secondary);
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
 #page {
@@ -66,10 +75,6 @@ h6 {
   content: "";
 }
 
-p {
-  margin-bottom: 30px;
-}
-
 h1,
 h2,
 h3,
@@ -78,9 +83,17 @@ h5,
 h6,
 figure {
   color: var(--color-text-secondary);
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 700;
-  margin: 0 0 20px 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
 }
 
 ::-webkit-selection {
@@ -117,5 +130,23 @@ a:focus {
 /* Custom Class */
 
 .content {
-  margin: 100px 0;
+  margin: 50px 0;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #000 !important;
+}
+
+.custom-navbar-icon {
+  color: #fff;
+}
+
+.custom-navbar-link {
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.navbar-nav {
+  margin: auto;
 }

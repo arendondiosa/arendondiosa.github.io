@@ -1,78 +1,67 @@
 import React from 'react';
-import {
-  faPython,
-  faJs,
-  faReact,
-  faHtml5,
-  faCss3,
-  faGitAlt,
-  faGithubAlt,
-  faGitlab,
-} from '@fortawesome/free-brands-svg-icons';
+/* import Link from 'next/link';
+import { FiUser, FiFile } from 'react-icons/fi';
+import { Button, ButtonGroup, Col, Row } from 'react-bootstrap'; */
 import { Col, Row } from 'react-bootstrap';
-import Skill from './Skill';
-import Social from '../Footer/components/Social';
+
 import { prefix } from '../../utils/prefix';
+import Social from 'components/Social';
 
 const About = () => {
   return (
     <>
       <Row>
-        <Col sm lg="4">
+        <Col sm lg="2">
           <Row>
-            <img src={`${prefix}/profile.png`} />
-          </Row>
-          <Row>
-            <Col sm lg="12">
-              <Social />
-            </Col>
+            <div className="photo-container">
+              <img src={`${prefix}/profile.png`} className="photo" />
+            </div>
           </Row>
         </Col>
-        <Col sm lg="8">
-          <Row>
-            <h1>🧑🏻‍🦳 Alejandro E. Rendon</h1>
-            <ul>
-              <li>Ingeniero de Software. +4 años de experiencia profesional</li>
-              <li>
-                Educación:
+        <Col sm lg="10">
+          <div className="info-container">
+            <Row>
+              <Col sm lg="8">
+                <div className="title-container">
+                  <h1 className="primary-font">Alejandro E. Rendon</h1>
+                  <h2>Ingeniero de Software</h2>
+                </div>
+              </Col>
+              <Col sm lg="4">
+                <Social />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
                 <ul>
-                  <li>Ingeniero de Sistemas y Computación</li>
                   <li>
-                    Maestría en Ing. Sistemas y Computación (Enfoque en
-                    Computación de Alto Rendimiento (HPC) e Inteligencia
-                    Artificial)
+                    Ingeniero de Software - +4 años de experiencia profesional{' '}
+                  </li>
+                  <li>
+                    Educación: Ingeniero de Sistemas y Computación con Maestría
+                    en Ing. Sistemas y Computación (Enfoque en Computación de
+                    Alto Rendimiento (HPC) e Inteligencia Artificial).
                   </li>
                 </ul>
-              </li>
-            </ul>
-          </Row>
-          <Row className="justify-content-center">
-            <Col xs lg="12">
-              <Skill icon={faHtml5} name="HTML5" color="#0db1c4" />
-              <Skill icon={faCss3} name="CSS3" color="#0db1c4" />
-              <Skill icon={faPython} name="Python" color="#0d38ae" />
-              <Skill icon={faJs} name="Javascript" color="#c4c40d" />
-              <Skill icon={faReact} name="ReactJS" color="#0db1c4" />
-            </Col>
-            <Col xs lg="12">
-              <Skill icon={faGitAlt} name="Git" color="#0db1c4" />
-              <Skill icon={faGithubAlt} name="GitHub" color="#0db1c4" />
-              <Skill icon={faGitlab} name="GitLab" color="#0db1c4" />
-            </Col>
-          </Row>
+              </Col>
+            </Row>
+            {/*  <Row>
+              <Col>
+                <ButtonGroup aria-label="buttons-about">
+                  <Button variant="primary">
+                    <FiUser /> Primary
+                  </Button>
+                  <Button variant="primary">
+                    <FiFile /> Primary
+                  </Button>
+                </ButtonGroup>
+              </Col>
+            </Row> */}
+          </div>
         </Col>
-      </Row>
-      <Row>
-        <h1 style={styles.message}>🛠 Work in Progress 👷🏻‍♂️</h1>
       </Row>
     </>
   );
-};
-
-const styles = {
-  message: {
-    textAlign: 'center',
-  },
 };
 
 export default About;
