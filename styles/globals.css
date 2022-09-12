@@ -14,18 +14,21 @@ body {
 }
 
 body,
-body[data-theme="light"] {
-  --color-text-primary: #27201a;
-  --color-text-secondary: #076963;
-  --color-bg-primary: #fff;
-  --color-bg-toggle: #1e90ff;
-}
 
 body[data-theme="dark"] {
   --color-text-primary: #e3e3e3;
   --color-text-secondary: #f3ba33;
   --color-bg-primary: #000;
   --color-bg-toggle: #a9a9a9;
+  --color-navbar-bg: rgba(0, 0, 0, 0.7);
+}
+
+body[data-theme="light"] {
+  --color-text-primary: #27201a;
+  --color-text-secondary: #ffb300;
+  --color-bg-primary: #f8f9fa;
+  --color-bg-toggle: #1e90ff;
+  --color-navbar-bg: rgb(248, 249, 250, 0.7);
 }
 
 .primary-font {
@@ -135,7 +138,7 @@ a:focus {
 
 /* Navbar */
 .custom-navbar {
-  background-color: rgba(0, 0, 0, 0.75) !important;
+  background: var(--color-navbar-bg) !important;
 }
 
 .custom-navbar-icon {
@@ -143,13 +146,22 @@ a:focus {
 }
 
 .custom-navbar-link {
+  color: var(--color-text-primary);
   font-weight: 700;
   padding-left: 10px;
+}
+
+.custom-navbar:hover {
+  cursor: pointer;
 }
 
 .navbar-nav .nav-link {
   padding: 15px 0;
   margin: 0 10px;
+}
+
+.navbar-nav .active.nav-link{
+  color: var(--color-text-secondary);
 }
 
 .navbar-nav .custom-navbar-link-button-theme {
