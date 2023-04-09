@@ -9,7 +9,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <NavbarSite />
-      <Container>{children}</Container>
+      <Container>
+        <div className="content">{children}</div>
+      </Container>
       <Footer />
     </>
   );

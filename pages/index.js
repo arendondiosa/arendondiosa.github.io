@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container } from 'react-bootstrap';
 
 import About from '../components/Content/About';
 
@@ -13,13 +12,11 @@ import Skills from 'components/Content/Skills';
 const Home = ({ posts }) => {
   return (
     <Layout>
-      <Container className="content">
-        <About />
-        {/* <hr />
+      <About />
+      {/* <hr />
         <Projects />
         <hr />
         <Skills /> */}
-      </Container>
       {/* <div>
         {posts.map((post) => (
           <Card key={post.slug}>
