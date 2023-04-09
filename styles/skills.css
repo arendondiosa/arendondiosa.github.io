@@ -1,9 +1,0 @@
-.skill-list {
-  display: block;
-  list-style-type: circle;
-  padding-left: 0;
-}
-
-.skill-list .skill-item {
-  display: inline-block;
-}
